@@ -13,6 +13,8 @@ panic = "abort"
 
 [dependencies]
 bootloader = "0.9.8"
+lazy_static = { version = "1.4.0", features = ["spin_no_std"] }
+spin = "0.9.0"
 
 [package.metadata.bootimage]
 # The cargo subcommand that will be used for building the kernel.
